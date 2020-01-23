@@ -6,7 +6,7 @@ using System.IO;
 
 namespace HoerbertConverter
 {
-    class AudioFileConvertedArgs : EventArgs
+    public class AudioFileConvertedArgs : EventArgs
     {
         public string InputFilePath { get; }
         public string OutputFilePath { get; }
@@ -18,7 +18,7 @@ namespace HoerbertConverter
         }
     }
 
-    class AudioProcessor
+    public class AudioProcessor
     {
         public event EventHandler<AudioFileConvertedArgs> FileProcessed;
 
